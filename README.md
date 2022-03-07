@@ -1,24 +1,15 @@
-# README
+# Portfolio Management App
+Keep track of your investments with real-time information.  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Example usage:  
+User buys cardano at us$ 0.81 per unit, total amount 10.000 usd (123.5 adquired units) on March 5, 2022 on Binance.  
 
-* Ruby version
+Then user opens this app and registers a new transaction as an asset.  
 
-* System dependencies
+If user commited a mistake he can edit the data.  
+User can delete existing assets too.  
 
-* Configuration
+User can see a table with the list of investments (assets). 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The table shows a column called performance, which calculates earnings on realtime (adquisition_price - current_price) * adquired_units. 
