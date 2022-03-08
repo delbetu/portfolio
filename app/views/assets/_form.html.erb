@@ -1,0 +1,47 @@
+<%= form_with(model: asset) do |form| %>
+  <% if asset.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+        <% asset.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :adquisition_unit_price_cents, style: "display: block" %>
+    <%= form.text_field :adquisition_unit_price_cents %>
+  </div>
+
+  <div>
+    <%= form.label :adquired_units, style: "display: block" %>
+    <%= form.text_field :adquired_units %>
+  </div>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :adquisition_date, style: "display: block" %>
+    <%= form.date_field :adquisition_date %>
+  </div>
+
+  <div>
+    <%= form.label :broker, style: "display: block" %>
+    <%= form.text_field :broker %>
+  </div>
+
+  <div>
+    <%= form.label :type, style: "display: block" %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

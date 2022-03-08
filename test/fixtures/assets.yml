@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adquisition_unit_price_cents: 
+  adquired_units: 1.5
+  name: MyString
+  adquisition_date: 2022-03-08
+  broker: MyString
+  type: 
+
+two:
+  adquisition_unit_price_cents: 
+  adquired_units: 1.5
+  name: MyString
+  adquisition_date: 2022-03-08
+  broker: MyString
+  type: 
